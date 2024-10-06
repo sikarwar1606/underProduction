@@ -97,8 +97,13 @@ nav.img{
     align-items: center;
     justify-content: center;
     font-size: 30px; 
+    text-decoration: none;
+    color: black;
+
 }
-/* End of navbar */
+
+
+
 
 .menu{
     margin-top: 60px;

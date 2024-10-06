@@ -1,0 +1,135 @@
+<!-- <?php
+if(isset ($_POST['Name'])){
+$server = "localhost";
+$username = "root";
+$password = "";
+$dbname = "NewUser";
+
+$conn = mysqli_connect($server, $username, $password, $dbname, 3306);
+if(!$conn){
+    die("connection failed " . mysqli_connect_error());
+}
+
+$Name=$_POST["Name"];
+$Emp_id=$_POST["Emp id"];
+$Department=$_POST["Department"];
+$Role=$_POST["Role"];
+$DOJ=$_POST["DOJ"];
+$ContactNo=$_POST["Contact no"];
+$Email=$_POST["Email"];
+$EmpStatus=$_POST["Emp status"];
+$Reporting=$_POST["Reporting"];
+$WorkLocation=$_POST["Work location"];
+$Shift=$_POST["Shift"];
+$Timing=$_POST["timing"];
+$Qualification=$_POST["Qualification"];
+$Certification=$_POST["Certification"];
+$Skills=$_POST["Skills"];
+$PrevComp=$_POST["Prev comp"];     
+$PrevRole=$_POST["Prev role"];
+$Duration=$_POST["Duration"];0 
+$ReasonForLeav=$_POST["Reason for leav"];
+$AdditionalComment=$_POST["Addtional comment"];
+$PrevSalary=$_POST["Prev salary"];
+
+
+$sql = "INSERT INTO `newuser`.`newuser` (`Name`, `EmpID`, `Department`, `Role`, `DOJ`, `phone`, `Email`, `EmpStatus`, `Reporting`, `WorkLocation`, `Shift`, `Timing`, `Qualification`, `Certification`, `Skills`, `PrevComp`, `PrevRole`, `Duration`, `ReasonForLeav`, `Comment`, `PrevSalary`) VALUES ('Name', 'Emp_id', 'Department', 'Role', 'DOJ', 'ContactNo', 'Email', 'EmpStatus', 'Reporting', 'WorkLocation', 'Shift', 'Timing', 'Qualification', 'Certification', 'Skills', 'PrevComp', 'PrevRole', 'Duration', 'ReasonForLeav', 'AdditionalComment.', 'PrevSalary)";
+
+if($conn->query($sql)==true){
+    echo "sucessfull inserted";
+}
+else{
+    echo "Error: $sql <br> $con->error";
+}
+$conn->close();
+}
+?> -->
+
+<!-- HTML CODE -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User Ragistration</title>
+    <link rel="stylesheet" href="addNewUser.css">
+</head>
+<body>
+    <h2>Employee Information Form</h2>
+    <form action="addNewUser.php" method="post">
+        <!-- Basic Details -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="employee_id">Employee ID:</label>
+        <input type="text" id="employee_id" name="employee_id" required>
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required>
+
+        <label for="role">Role:</label>
+        <input type="text" id="role" name="role" required>
+
+        <label for="doj">Date of Joining:</label>
+        <input type="text" id="doj" name="doj" required>
+
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Employment Details -->
+        <label for="status">Employment Status:</label>
+        <select id="status" name="status" required>
+            <option value="active">Active</option>
+            <option value="inactive">Inactive</option>
+        </select>
+
+        <label for="reporting">Reporting:</label>
+        <input type="text" id="reporting" name="reporting">
+
+        <label for="location">Work Location:</label>
+        <input type="text" id="location" name="location">
+
+        <label for="shift">Shift Timings:</label>
+        <input type="text" id="shift" name="shift">
+
+        <!-- Skills and Qualifications -->
+        <label for="qualification">Highest Qualification:</label>
+        <input type="text" id="qualification" name="qualification">
+
+        <label for="certifications">Certifications:</label>
+        <textarea id="certifications" name="certifications" rows="3"></textarea>
+
+        <label for="skills">Skills:</label>
+        <textarea id="skills" name="skills" rows="3"></textarea>
+
+        <!-- Employment History -->
+        <label for="prev_company">Previous Company:</label>
+        <input type="text" id="prev_company" name="prev_company">
+
+        <label for="prev_role">Previous Role:</label>
+        <input type="text" id="prev_role" name="prev_role">
+
+        <label for="duration">Duration:</label>
+        <input type="text" id="duration" name="duration">
+
+        <label for="reason">Reason for Leaving:</label>
+        <textarea id="reason" name="reason" rows="3"></textarea>
+
+        <!-- Notes -->
+        <label for="notes">Additional Comments or Notes:</label>
+        <textarea id="notes" name="notes" rows="4"></textarea>
+
+        <label for="pre_salary">Previous Salary:</label>
+        <input type="text" id="pre_salary" name="pre_salary">
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+

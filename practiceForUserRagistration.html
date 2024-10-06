@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <link rel="stylesheet" href="secure_signup copy.css">
+</head>
+<body>
+    <h2>Employee Registration</h2> 
+
+    <div class="form">
+
+
+    <form action="process_registration.php" method="POST">
+        
+        <!-- Basic Information -->
+        <h3>Basic Information</h3>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="contact_number">Contact Number:</label>
+        <input type="text" id="contact_number" name="contact_number" required><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea><br>
+
+        <!-- Emergency Contact -->
+        <h3>Emergency Contact Information</h3>
+        <label for="emergency_contact">Emergency Contact Name:</label>
+        <input type="text" id="emergency_contact" name="emergency_contact" required><br>
+
+        <label for="emergency_contact_relation">Relation to Emergency Contact:</label>
+        <input type="text" id="emergency_contact_relation" name="emergency_contact_relation" required><br>
+
+        <!-- Employment Details -->
+        <h3>Employment Details</h3>
+        <label for="joining_date">Joining Date:</label>
+        <input type="date" id="joining_date" name="joining_date" required><br>
+
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+            <option value="HR">HR</option>
+            <option value="Admin">Admin</option>
+            <option value="Production">Production</option>
+            <option value="Quality">Quality</option>
+            <!-- Add more departments as needed -->
+        </select><br>
+
+        <label for="function">Function:</label>
+        <input type="text" id="function" name="function" required><br>
+
+        <label for="reporting_manager">Reporting Manager:</label>
+        <input type="text" id="reporting_manager" name="reporting_manager" required><br>
+
+        <label for="user_role">User Role:</label>
+        <select id="user_role" name="user_role" required>
+            <option value="Manager">Manager</option>
+            <option value="Executive">Executive</option>
+            <option value="Director">Director</option>
+        </select><br>
+
+        <!-- Bank Details -->
+        <h3>Bank Details</h3>
+        <label for="bank_name">Bank Name:</label>
+        <input type="text" id="bank_name" name="bank_name" required><br>
+
+        <label for="bank_account_number">Bank Account Number:</label>
+        <input type="text" id="bank_account_number" name="bank_account_number" required><br>
+
+        <label for="tax_id">Tax ID (PAN):</label>
+        <input type="text" id="tax_id" name="tax_id" required><br>
+
+        <!-- Shift Preferences -->
+        <h3>Shift & Location</h3>
+        <label for="work_location">Work Location:</label>
+        <input type="text" id="work_location" name="work_location" required><br>
+
+        <label for="shift_preference">Shift Preference:</label>
+        <select id="shift_preference" name="shift_preference" required>
+            <option value="Day">Day</option>
+            <option value="Night">Night</option>
+            <option value="Flexible">Flexible</option>
+        </select><br>
+
+        <!-- Additional Info -->
+        <h3>Additional Information</h3>
+        <label for="performance_objectives">Performance Objectives:</label>
+        <textarea id="performance_objectives" name="performance_objectives"></textarea><br>
+
+        <label for="government_id">Government ID (Aadhar/Passport):</label>
+        <input type="text" id="government_id" name="government_id" required><br>
+
+        <label for="health_insurance_number">Health Insurance Number:</label>
+        <input type="text" id="health_insurance_number" name="health_insurance_number"><br>
+
+        <input type="submit" value="Register">
+    </form>
+</div>
+</body>
+</html>
