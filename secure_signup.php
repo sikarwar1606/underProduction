@@ -113,7 +113,7 @@ $stmt->bind_param("sssssss", $user_name, $dob, $phone, $email, $EmpId, $departme
     </div>
 
     <div class="main">            
-        <form action="practice_signup.php" method="POST" class="signin_main_page">
+        <form action="secure_signup.php" method="POST" class="signin_main_page">
             <label for="Name">Full Name</label>
             <input type="text" class="input" name="user_name" placeholder="Raj Kumar" required><br>
 

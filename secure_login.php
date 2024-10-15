@@ -3,18 +3,18 @@ $login = false;
 $showError = false;
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     include 'partials/dbconnect.php';
-    $userName = $_POST["username"];
-    $password = $_POST["password"]; 
+    $userId = $_POST["userId"];
+    $passwordd = $_POST["passwordd"]; 
     
      
-    $sql = "Select * from emp_ragistration where username='$userName' AND password='$password'";
+    $sql = "Select * from user_credentials where userId='$userId' AND passwordd='$passwordd'";
     $result = mysqli_query($conn, $sql);
     $num = mysqli_num_rows($result);
     if ($num == 1){
         $login = true;
         session_start();
         $_SESSION['loggedin'] = true;
-        $_SESSION['username'] = $username;
+        $_SESSION['userId'] = $userId;
         header("location: HomeHyderabad.php");
 
     } 
@@ -69,13 +69,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <div class="main">            
                 <form action="secure_login.php" method="POST" class="login_main_page">
 
-                    <label for="username">Username:</label>
+                    <label for="userId">User Id:</label>
 
-                    <input type="text" id="username" name="username" autocomplete="off" placeholder="sikarwar@2002"  required><br>
+                    <input type="text" id="userId" name="userId" autocomplete="off" placeholder="user@1234"  required><br>
 
-                    <label for="password">Password:</label>
+                    <label for="passwordd">Password:</label>
 
-                    <input type="password" id="password" name="password" placeholder="siKarwar&86" required><br>
+                    <input type="password" id="password" name="passwordd" placeholder="passeord#@34" required><br>
                     <a href="Forget_password.html">Forget Password</a>
 
                     <input type="submit" class="login_button" value="Login">
