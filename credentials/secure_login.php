@@ -2,7 +2,7 @@
 $login = false;
 $showError = false;
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-    include 'partials/dbconnect.php';
+    include 'dbconnect.php';
     $userId = $_POST["userId"];
     $passwordd = $_POST["passwordd"]; 
     
@@ -15,8 +15,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         session_start();
         $_SESSION['loggedin'] = true;
         $_SESSION['userId'] = $userId;
-        header("location: HomeHyderabad.php");
-
+        header("Location:/HR/HomePage/HomeHyderabad.php");      
     } 
     else{
         $showError = "Invalid Credentials";
@@ -56,7 +55,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     ?>
 
     <div class="navbar">
-        <div class="nav_logo"><video class="logo_video" src="secure_logo.mp4" width="75%px"  loop autoplay muted ></div>
+        <div class="nav_logo"><video class="logo_video" src="resourse\secure_logo.mp4" width="75%px"  loop autoplay muted ></div>
         <div class="user_logo_nav"><i class="fa-regular fa-user"></i></div>
       </div>
 

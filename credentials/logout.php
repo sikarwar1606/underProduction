@@ -10,15 +10,15 @@ if (isset($_SESSION['loggedin'])) {
     // Destroy the session
     if (session_destroy()) {
         // Redirect to the login page after successful logout
-        header("Location: secure_login.php?logout=success");
+        header("Location:secure_login.php?logout=success");       
         exit;
     } else {
         // Handle error if session destruction fails
-        header("Location: secure_login.php?error=failed_to_logout");
+        header("Location:secure_login.php?error=failed_to_logout");
         exit;
     }
 } else {
     // If the session is not set, redirect directly to the login page
-    header("Location: secure_login.php?error=not_logged_in");
+    header("Location:secure_login.php?error=not_logged_in");
     exit;
 }

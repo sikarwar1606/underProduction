@@ -2,26 +2,27 @@
 session_start();
 
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
-    header('location: secure_login.php');
+    header('location: /HR/credentials/secure_login.php');
     exit;
 }
 ?>
-
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-    <meta charset='UTF-8' />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <title>HomeHyderabad</title>
-    <link rel='stylesheet' href='secure_Home_Hyd.css' />
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css' />
-   
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ProductionSecure</title>
+    <link rel="stylesheet" href="ProductionSecureHyderabad.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
 
-<body>
-    <div class='navbar'>
-        <div class='nav_logo'>
-            <video class='logo_video' src='SecureHome.mp4' width='75%' loop autoplay muted></video>
+  <!-- including navbar -->
+  <div class='navbar'>
+        <div class='nav_logo' > 
+            <video class='logo_video' src='\HR\resourse\secure_production.mp4' width='75%' loop autoplay muted></video>
         </div>
         <div class='search_nav'>
             <input type='text' placeholder='Search...' class='search_input_nav' />
@@ -51,33 +52,25 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
             </div>
         </div>
 
-        <a href='logout.php' class='log_out'>
+        <a href='/HR/credentials/logout.php' class='log_out'>
             <i class='fa-solid fa-right-from-bracket'></i>
         </a>
     </div>
+
 
     <!-- Responsive Menu -->
     <div class="menu-container">
         <div class="menu-icon" onclick="toggleMenu()">&#9776; Menu</div>
         <div class="menu">            
-            <span>Admin</span>
-            <span>H.R</span>
-            <span>Planning</span>
-            <span>Store</span>
-            <span>Production</span>
-            <span>Quality</span>
-            <span>Dispatch</span>
-            <span>Utility & Electrical</span>
-            <span>Maintenance & Technical</span>
+        <span><a href="/HR/HomePage/HomeHyderabad.php">Home</a></span>
+        <span><a href="/HR/Production/RunningProduction.php">Running Production</a></span>
+        <span><a href="/HR/Production/BreakdownProduction.php">Break Down</a></span>
+            <span>Add</span>
+            <span>Add</span>
+            <span>Add</span>
+            <span>Add</span>
         </div>
     </div>
-
-    <div class="container">
-        <div class="upcoming_events style_container">Upcoming Events</div>
-        <div class="important_notes style_container">Important Notes</div>
-        <div class="customer_complaints style_container">Customer Complaints</div>
-    </div>
-
     <script>
         function toggleMenu() {
             const menu = document.querySelector('.menu');
@@ -94,5 +87,25 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
             userLogoContainer.classList.toggle('open');
         }
     </script>
-</body>
+        <!-- End of responsive menu -->
+
+
+    <!-- <div class="UpcomingPlan">
+      <div class="nav_upcoming_plan">
+        <h3 id="hup">Upcoming Plan</h3>
+      </div>
+      <div id="container_upcoming_plan"></div>      
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          var storedData = localStorage.getItem("table_upcomingPlan");
+          if (storedData) {
+              document.getElementById("container_upcoming_plan").innerHTML = storedData;
+          }
+      });
+      </script> -->
+    <!-- END OF UPCOMING PLAN -->
+
+
+  </body>
 </html>
