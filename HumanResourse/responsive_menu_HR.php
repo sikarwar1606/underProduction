@@ -15,7 +15,7 @@
         <div class="menu-icon" onclick="toggleMenu()">&#9776; Menu</div>
         <div class="menu">            
             <span><a href="secure_signup.php">CREATE NEW EMP.</a></span>
-            <span><a href="">MANAGE EMP. PROFILE</a></span>
+            <span><a href="manage_emp_profile.php">MANAGE EMP. PROFILE</a></span>
             <span><a href="">ATENDENCE</a></span>
             <span><a href="">PAY SLIPS</a></span>
             <span><a href="">EMP. PERFORMANCE</a></span>

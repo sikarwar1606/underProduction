@@ -1,0 +1,100 @@
+Array
+(
+    [EmpId] => SI0295
+    [updates] => Array
+        (
+            [EmpId] => SI0295
+            [user_name] => Anupama
+            [dob] => 2002-06-16
+            [phone] => 9390166307
+            [email] => sikarwara1606@gmail.com
+            [UserId] => sikarwar161
+            [status] => Active
+        )
+
+)
+Array
+(
+    [EmpId] => SI0295
+    [updates] => Array
+        (
+            [EmpId] => SI0295
+            [user_name] => Anupam
+            [dob] => 2002-06-16
+            [phone] => 9390166307
+            [email] => sikarwara1606@gmail.com
+            [UserId] => sikarwar16
+            [status] => Active
+        )
+
+)
+Array
+(
+    [EmpId] => SI0295
+    [updates] => Array
+        (
+            [user_name] => Anupam
+            [dob] => 2002-06-16
+            [phone] => 9390166307
+            [email] => sikarwara1606@gmail.com
+            [UserId] => sikarwar16
+            [status] => Active
+        )
+
+)
+Array
+(
+    [EmpId] => SI0021
+    [updates] => Array
+        (
+            [user_name] => Sonia
+            [dob] => 1999-01-10
+            [phone] => 9587411258
+            [email] => sonia@gmail.com
+            [UserId] => sonia@22
+            [status] => 
+        )
+
+)
+Array
+(
+    [EmpId] => SI0021
+    [updates] => Array
+        (
+            [user_name] => Sonia
+            [dob] => 1999-01-10
+            [phone] => 9587411258
+            [email] => sonia@gmail.com
+            [UserId] => sonia@22
+            [status] => 
+        )
+
+)
+Array
+(
+    [EmpId] => SI0021
+    [updates] => Array
+        (
+            [user_name] => Sonia
+            [dob] => 1999-01-10
+            [phone] => 9587411258
+            [email] => sonia@gmail.com
+            [UserId] => sonia@22
+            [status] => 
+        )
+
+)
+Array
+(
+    [EmpId] => SI0296
+    [updates] => Array
+        (
+            [user_name] => Anil
+            [dob] => 2002-09-14
+            [phone] => 9817855315
+            [email] => anil@gmail.com
+            [UserId] => anil14
+            [status] => Active
+        )
+
+)

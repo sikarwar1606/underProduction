@@ -1,0 +1,373 @@
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar161
+    [status] => Active
+)
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar161
+    [status] => Active
+)
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar161
+    [status] => Active
+)
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar161
+    [status] => Active
+)
+EmpId: SI0295
+EmpId: SI0295
+
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar165
+    [status] => Active
+)
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar165
+    [status] => Active
+)
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar165
+    [status] => Active
+)
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar165
+    [status] => Active
+)
+EmpId: SI0296
+Updates: Array
+(
+    [EmpId] => SI0296
+    [user_name] => Anil
+    [dob] => 2002-09-14
+    [phone] => 9817855315
+    [email] => anil@gmail.com
+    [UserId] => anil14
+    [status] => Active
+)
+EmpId: SI0296
+Updates: Array
+(
+    [EmpId] => SI0296
+    [user_name] => Anil
+    [dob] => 2002-09-14
+    [phone] => 9817855315
+    [email] => anil@gmail.com
+    [UserId] => anil14
+    [status] => Active
+)
+EmpId: SI0296
+Updates: Array
+(
+    [EmpId] => SI0296
+    [user_name] => Anil
+    [dob] => 2002-09-14
+    [phone] => 9817855315
+    [email] => anil@gmail.com
+    [UserId] => anil14
+    [status] => Active
+)
+EmpId: SI0296
+Updates: Array
+(
+    [EmpId] => SI0296
+    [user_name] => Anil
+    [dob] => 2002-09-14
+    [phone] => 9817855315
+    [email] => anil@gmail.com
+    [UserId] => anil14
+    [status] => Active
+)
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar165
+    [status] => Active
+)
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar165
+    [status] => Active
+)
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar165
+    [status] => Active
+)
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar165
+    [status] => Active
+)
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar165
+    [status] => Active
+)
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar165
+    [status] => Active
+)
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar165
+    [status] => Active
+)
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar16
+    [status] => Active
+)
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar16
+    [status] => Active
+)
+EmpId: SI0301
+Updates: Array
+(
+    [EmpId] => SI0301
+    [user_name] => Anish 
+    [dob] => 1994-06-18
+    [phone] => 9814785236
+    [email] => anish@gmail.com
+    [UserId] => anish@gmail.com
+    [status] => Inactive
+)
+EmpId: SI0301
+EmpId: SI0301
+Updates: Array
+(
+    [EmpId] => SI0301
+    [user_name] => Anish 
+    [dob] => 1994-06-18
+    [phone] => 9814785236
+    [email] => anish@gmail.com
+    [UserId] => anish@gmail.com
+    [status] => Inactive
+)
+Updates: Array
+(
+    [EmpId] => SI0301
+    [user_name] => Anish 
+    [dob] => 1994-06-18
+    [phone] => 9814785236
+    [email] => anish@gmail.com
+    [UserId] => anish@gmail.com
+    [status] => Inactive
+)
+EmpId: SI0301
+Updates: Array
+(
+    [EmpId] => SI0301
+    [user_name] => Anish 
+    [dob] => 1994-06-18
+    [phone] => 9814785236
+    [email] => anish@gmail.com
+    [UserId] => anish@gmail.com
+    [status] => Inactive
+)
+EmpId: SI0301
+Updates: Array
+(
+    [EmpId] => SI0301
+    [user_name] => Anish 
+    [dob] => 1994-06-18
+    [phone] => 9814785236
+    [email] => anish@gmail.com
+    [UserId] => anish@gmail.com
+    [status] => Inactive
+)
+EmpId: SI0301
+Updates: Array
+(
+    [EmpId] => SI0301
+    [user_name] => Anish 
+    [dob] => 1994-06-18
+    [phone] => 9814785236
+    [email] => anish@gmail.com
+    [UserId] => anish@gmail.com
+    [status] => Inactive
+)
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar16
+    [status] => Active
+)
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar16
+    [status] => Active
+)
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar16
+    [status] => Active
+)
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar16
+    [status] => Active
+)
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar16
+    [status] => Active
+)
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar16
+    [status] => Active
+)
+EmpId: SI0295
+Updates: Array
+(
+    [EmpId] => SI0295
+    [user_name] => Anupam
+    [dob] => 2002-06-16
+    [phone] => 9390166307
+    [email] => sikarwara1606@gmail.com
+    [UserId] => sikarwar16
+    [status] => Active
+)

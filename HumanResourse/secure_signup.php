@@ -1,8 +1,15 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
+    header('location: /HR/credentials/secure_login.php');
+    exit;
+}
+
 $showAlert = false;
 $showError = false;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    include 'partials/dbconnect.php';
+    include '../credentials/dbconnect.php';
     $user_name = $_POST["user_name"];
     $dob = $_POST["dob"];
     $phone = $_POST["phone"];
@@ -80,6 +87,14 @@ $stmt->bind_param("sssssss", $user_name, $dob, $phone, $email, $EmpId, $departme
 <body>
 
 <?php
+// including navbar
+include 'navbar_HR.php';
+
+//  Responsive Men
+include 'responsive_menu_HR.php';
+
+
+
     if ($showAlert) {
         echo ' <div class="alert alert-success alert-dismissible fade show" role="alert">
             <strong>Success!</strong> Your account is now created and you can login.
@@ -115,19 +130,19 @@ $stmt->bind_param("sssssss", $user_name, $dob, $phone, $email, $EmpId, $departme
     <div class="main">            
         <form action="secure_signup.php" method="POST" class="signin_main_page">
             <label for="Name">Full Name</label>
-            <input type="text" class="input" name="user_name" placeholder="Raj Kumar" required><br>
+            <input type="text" class="input" name="user_name" placeholder="Raj Kumar" required autocomplete="off"><br>
 
             <label for="DOB">Date of Birth</label>
-            <input type="date" class="input" name="dob" required><br>
+            <input type="date" class="input" name="dob" required autocomplete="off"><br>
 
             <label for="Phone">Mobile Number</label>
-            <input type="text" class="input" name="phone" placeholder="9144444404" required><br>
+            <input type="text" class="input" name="phone" placeholder="9144444404" required autocomplete="off"><br>
 
             <label for="Mail">Email Id</label>
-            <input type="email" class="input" name="email" placeholder="mohan32@gmail.com" required><br>
+            <input type="email" class="input" name="email" placeholder="mohan32@gmail.com" required autocomplete="off"><br>
 
             <label for="EmpId">Employee Id</label>
-            <input type="text" class="input" name="EmpId" placeholder="SI0111" required><br>
+            <input type="text" class="input" name="EmpId" placeholder="SI0111" required autocomplete="off"><br>
 
             <label for="department_name">Department</label>
             <select class="input" name="department_name" required>
@@ -158,16 +173,18 @@ $stmt->bind_param("sssssss", $user_name, $dob, $phone, $email, $EmpId, $departme
             </select><br>
 
             <label for="Name">USER ID</label>
-            <input type="text" class="input" name="userId" placeholder="user@23" required><br>
+            <input type="text" class="input" name="userId" placeholder="user@23" required autocomplete="off"><br>
 
             <label for="passwordd">Password</label>
-            <input type="password" class="input" name="passwordd" placeholder="password@53" required><br>
+            <input type="password" class="input" name="passwordd" placeholder="password@53" required autocomplete="off"><br>
 
             <label for="confirm_passwordd">Password</label>
-            <input type="password" class="input" name="confirm_password" placeholder="password@53" required><br>
+            <input type="password" class="input" name="confirm_password" placeholder="password@53" required autocomplete="off"><br>
 
-            <label for="EmpId">Emp. Id.</label>
-            <input type="text" class="input" name="EmpId" placeholder="SI0000" required><br>
+            <label for="status">Status</label>
+            <input type="text" class="input" name="status" placeholder="Active" required autocomplete="off"><br>
+
+    
 
 
             <button type="submit" class="btn ">Submit</button>
