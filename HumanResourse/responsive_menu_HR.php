@@ -17,7 +17,7 @@
             <span><a href="secure_signup.php">CREATE NEW EMP.</a></span>
             <span><a href="manage_emp_profile.php">MANAGE EMP. PROFILE</a></span>
             <span><a href="">ATENDENCE</a></span>
-            <span><a href="">PAY SLIPS</a></span>
+            <span><a href="salary_slip.php">PAY SLIPS</a></span>
             <span><a href="">EMP. PERFORMANCE</a></span>
             <span><a href="/HR/HomePage/HomeHyderabad.php">HOME</a></span>
         </div>

@@ -72,17 +72,18 @@ if ($result->num_rows > 0) {
     </tr>";
     while ($row = $result->fetch_assoc()) {
         echo "<tr>
-            <td class='editable' data-field='user_name' data-id='{$row['EmpId']}'>{$row['EmpId']}</td>
-            <td class='editable' data-field='user_name' data-id='{$row['user_name']}'>{$row['user_name']}</td>
-            <td class='editable' data-field='user_name' data-id='{$row['dob']}'>{$row['dob']}</td>
-            <td class='editable' data-field='user_name' data-id='{$row['phone']}'>{$row['phone']}</td>
-            <td class='editable' data-field='user_name' data-id='{$row['email']}'>{$row['email']}</td>
-            <td class='editable' data-field='user_name' data-id='{$row['UserId']}'>{$row['UserId']}</td>
-            <td class='editable' data-field='user_name' >********</td> 
-            <td class='editable' data-field='user_name' data-id='{$row['status']}'>{$row['status']}</td>
-            <td class='edit-btn' data-id='{$row['EmpId']}'>Edit</td>
+            <td>{$row['EmpId']}</td>
+            <td class='editable' data-field='user_name' data-id='{$row['EmpId']}'>{$row['user_name']}</td>
+            <td class='editable' data-field='dob' data-id='{$row['EmpId']}'>{$row['dob']}</td>
+            <td class='editable' data-field='phone' data-id='{$row['EmpId']}'>{$row['phone']}</td>
+            <td class='editable' data-field='email' data-id='{$row['EmpId']}'>{$row['email']}</td>
+            <td>{$row['UserId']}</td>
+            <td>********</td>
+            <td class='editable' data-field='status' data-id='{$row['EmpId']}'>{$row['status']}</td>
+            <td><button class='edit-btn' data-id='{$row['EmpId']}'>Edit</button></td>
         </tr>";
-    }
+    }    
+    
     echo "</table>";
 } else {
     echo "No records found.";
@@ -95,49 +96,65 @@ $conn->close();
 
 <script>
     // Attach event listener to edit buttons
-    $(document).on("click", ".edit-btn", function() {
-        let EmpId = $(this).data("id");
-        let row = $(this).closest("tr");
-        row.find(".editable").each(function() {
-            let field = $(this).data("field");
-            let value = $(this).text();
-            $(this).html(`<input type="text" class="edit-input" data-field="${field}" data-id="${EmpId}" value="${value}" />`);
-        });
-        $(this).text("Save").addClass("save-btn").removeClass("edit-btn");
+    $(document).on("click", ".edit-btn", function () {
+    let EmpId = $(this).data("id");
+    let row = $(this).closest("tr");
+
+    // Switch fields to input mode
+    row.find(".editable").each(function () {
+        let field = $(this).data("field");
+        let value = $(this).text();
+        $(this).html(
+            `<input type="text" class="edit-input" data-field="${field}" data-id="${EmpId}" value="${value}" />`
+        );
     });
 
-    // Handle Save functionality
-    $(document).on("click", ".save-btn", function() {
-        let EmpId = $(this).data("id");
-        let updates = {};
+    $(this).text("Save").addClass("save-btn").removeClass("edit-btn");
+});
 
-        // Collect edited values
-        $(`input[data-id="${EmpId}"]`).each(function() {
-            updates[$(this).data("field")] = $(this).val();
-        });
+$(document).on("click", ".save-btn", function () {
+    let EmpId = $(this).data("id");
+    let updates = {};
 
-        // Send data to server using AJAX
-        $.ajax({
-            url: "update_data.php",
-            type: "POST",
-            data: { EmpId: EmpId, updates: updates },
-            success: function(response) {
+    // Collect updated values
+    $(`input[data-id="${EmpId}"]`).each(function () {
+        let field = $(this).data("field");
+        let value = $(this).val();
+        updates[field] = value;
+    });
+
+    // Send data to server using AJAX
+    $.ajax({
+        url: "update_data.php",
+        type: "POST",
+        data: { EmpId: EmpId, updates: updates },
+        success: function (response) {
+            try {
                 let res = JSON.parse(response);
                 if (res.success) {
                     // Update table with new values
                     for (let field in updates) {
                         $(`td[data-field="${field}"][data-id="${EmpId}"]`).text(updates[field]);
                     }
-                    $(`.save-btn[data-id="${EmpId}"]`).text("Edit").addClass("edit-btn").removeClass("save-btn");
+                    $(`.save-btn[data-id="${EmpId}"]`)
+                        .text("Edit")
+                        .addClass("edit-btn")
+                        .removeClass("save-btn");
                 } else {
-                    alert("Failed to update data!");
+                    alert("Failed to update data: " + (res.error || "Unknown error"));
                 }
-            },
-            error: function(xhr, status, error) {
-                console.error("Error: " + error);
+            } catch (e) {
+                console.error("Invalid JSON response:", response);
+                alert("An error occurred while updating data.");
             }
-        });
+        },
+        error: function (xhr, status, error) {
+            console.error("AJAX Error:", error);
+            alert("Failed to communicate with the server.");
+        },
     });
+});
+
 </script>
 
 
